@@ -1,8 +1,22 @@
-# React + Vite
+#  Art Explorer - A React Application for Art Enthusiasts school students
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>This project aims to create a fun and engaging React web application for school students to explore the world of Art. It utilizes the open API provided by The Art Institute of Chicago (https://api.artic.edu/).</p>
 
-Currently, two official plugins are available:
+<hr>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project map:
+
+src/
+
+── components/
+   ├── Navbar.jsx
+   ├── MainPage.jsx
+   ├── ArtworkCard.jsx
+   ├── SearchFilter.jsx
+   └── Toggle.jsx
+
+── services
+   └── ApiService.jsx
+
+── App.jsx
+
