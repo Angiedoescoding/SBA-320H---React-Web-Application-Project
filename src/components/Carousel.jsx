@@ -12,8 +12,8 @@ const Carousel = ({ artworks }) => {
         centerMode: true,
         centerPadding: '60px',
         // adaptiveHeight: true,
-        slidesToShow: 2,        // changeable
-        slidesToScroll: 2       // changeable
+        slidesToShow: 3,        // changeable
+        slidesToScroll: 1       // changeable
     };
 
     return (
