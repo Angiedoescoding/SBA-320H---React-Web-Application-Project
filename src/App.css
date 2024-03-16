@@ -67,13 +67,13 @@ nav ul li a {
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .artworks-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
+  margin-top: 40px;
 }
 
 /* ArtworkCard Styles */
@@ -86,4 +86,75 @@ nav ul li a {
 
 .artwork-card h3 {
   margin-top: 0;
+}
+
+/* Carousel.css */
+
+/* Slider container */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.h2AboutArt {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.h2Carousel {
+  background-color: rgba(246, 174, 19, 0.299);
+  padding: 10px;
+}
+
+
+/* Individual slides */
+.slick-slide {
+  float: left;
+  min-height: 1px;
+  display: none;
+}
+
+.slick-slide img {
+  width: 350px; 
+  height: 350px; 
+  object-fit: contain ;
+}
+
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: rgba(246, 174, 19, 0.698);
 }
