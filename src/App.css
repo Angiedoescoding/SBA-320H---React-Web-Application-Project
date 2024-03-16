@@ -39,3 +39,27 @@ nav ul li a {
   text-decoration: none;
   color: #3f0f0f;
 }
+
+/* Toggle btn */
+.toggle-btn {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #555555;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .h3Dark {
+  color: #bbe1fb;
+}
+
