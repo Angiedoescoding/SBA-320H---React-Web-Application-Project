@@ -4,19 +4,22 @@
 
 <hr>
 
-Project map:
+#### Project map:
 
-src/
+<p>src/</p>
+<ul>
+    <li>components/</li>
+        <ul>
+            <li>Navbar.jsx</li>
+            <li>MainPage.jsx</li>
+            <li>ArtworkCard.jsx</li>
+            <li>SearchFilter.jsx</li>
+            <li>Toggle.jsx</li>
+        </ul>
+    <li>services/</li>
+        <ul>
+            <li>ApiService.jsx</li>
+        </ul>
+    <li>App.jsx</li>
 
-── components/
-   ├── Navbar.jsx
-   ├── MainPage.jsx
-   ├── ArtworkCard.jsx
-   ├── SearchFilter.jsx
-   └── Toggle.jsx
-
-── services
-   └── ApiService.jsx
-
-── App.jsx
 
