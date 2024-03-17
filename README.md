@@ -23,3 +23,37 @@
     <li>App.jsx</li>
 
 
+#### Project Description:
+
+<h2>Navbar Component:</h2>
+<ul>
+<li>Contains links to different sections: About, Schedule, Art Resources, and Login Form.</li>
+<li>Will be a separate React component.</li>
+</ul>
+
+<h2>Main Page Component:</h2>
+<ul>
+<li>Contains general info about Art and a section for displaying artworks.</li>
+<li>Will be a separate React component.</li>
+</ul>
+
+<h2>Artwork Card Component:</h2>
+<ul>
+<li>Displays individual artworks.</li>
+<li>Will be a separate React component.</li>
+</ul>
+
+<h2>Search/Filter Component:</h2>
+<ul>
+<li>Allows users to search for artists or artworks.</li>
+<li>Will be a separate React component.</li>
+</ul>
+
+<h2>Toggle Component:</h2>
+<ul>
+<li>Allows users to switch between light and dark mode.</li>
+<li>Will be a separate React component.</li>
+</ul>
+
+
+##### Created by Angelica V, March 2024.
