@@ -158,3 +158,36 @@ nav ul li a {
 .slick-dots li.slick-active button {
   background-color: rgba(246, 174, 19, 0.698);
 }
+
+
+input {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 0.5px solid #bbe1fb;
+  margin-top: 60px;
+}
+
+#searchBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow; 
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 0.5px solid #bbe1fb;
+  margin-top: 60px;
+}
+
+#searchBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow; 
+  margin-left: 8px;
+  margin-bottom: 8px;
+}

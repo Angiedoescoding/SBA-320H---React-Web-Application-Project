@@ -3,8 +3,13 @@ import ApiService from '../services/ApiService';
 
 const SearchFilter = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [searchResult, setSearchResult] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleSearch = async () => {
+        setLoading(true);
+        setError(null);
 
         try {
             const result = await ApiService.searchArtist(searchTerm);
@@ -35,7 +40,16 @@ const SearchFilter = () => {
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}
             />
+
             <button onClick={handleSearch} id='searchBtn'>Search</button> 
+
+            {loading && <div>Loading...</div>}
+            {error && <div>Error: {error}</div>}
+            {searchResult && (
+                <div>
+                    {/* Render search results here */}
+                </div>
+            )}
         </div>
     );
 }
