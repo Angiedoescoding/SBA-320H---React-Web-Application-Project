@@ -22,6 +22,7 @@
         </ul>
     <li>App.jsx</li>
 
+<hr>
 
 #### Project Description:
 
