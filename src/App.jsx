@@ -6,6 +6,8 @@ import MainPage from './components/MainPage';
 import SearchFilter from './components/SearchFilter';
 import Toggle from './components/Toggle';
 import NotFound from './components/NotFound';
+import FavoritesList from "./components/FavoritesList";
+
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
       <Navbar />
         <Routes>
         <Route path='/' element={<MainPage />} />
+        <Route path='/favorites' element={<FavoritesList />} />
         <Route path='*' element={<NotFound />} />
         </Routes>
       <SearchFilter />
