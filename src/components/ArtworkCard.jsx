@@ -8,12 +8,12 @@ import { FaHeart } from "react-icons/fa";
 const ArtworkCard = ({ artwork }) => {
 
     // State to track whether artwork is favorited
-    const [Favorite, setFavorite] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(false);
     
     const toggleFavorite = () => {
-        setFavorite(!Favorite);
+        setIsFavorite(!isFavorite);
 
-        if (Favorite) {
+        if (isFavorite) {
             console.log(`Removed the "${artwork.title}" from favorites.`);
         } else {
             console.log(`Added the "${artwork.title} to favorites."`)
@@ -29,9 +29,9 @@ const ArtworkCard = ({ artwork }) => {
             <p>Details: {artwork.place_of_origin}</p>
             <p>{artwork.description}</p>
 
-            <button onClick={toggleFavorite}>
-                <FaHeart color={Favorite ? 'red' : 'gray'} />
-            </button>
+        <button onClick={toggleFavorite}>
+            <FaHeart color={isFavorite ? 'red' : 'gray'} />
+        </button>
     </div>
     )
 }
