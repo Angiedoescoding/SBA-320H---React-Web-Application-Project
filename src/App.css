@@ -63,6 +63,11 @@ nav ul li a {
   color: #bbe1fb;
 }
 
+.dark-mode .h2AboutArt {
+  color: #bbe1fb;
+}
+
+
 /* MainPage Styles */
 .main-container {
   max-width: 1200px;
@@ -73,14 +78,14 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /* ArtworkCard Styles */
 .artwork-card {
   border: 1px solid #cccccc;
   border-radius: 5px;
-  padding: 8px;
+  padding: 18px;
   background-color: rgba(167, 180, 184, 0.146);
 }
 
@@ -190,4 +195,9 @@ input {
   background-color: yellow; 
   margin-left: 8px;
   margin-bottom: 8px;
+}
+
+li {
+  list-style: none;
+  color: rgb(241, 134, 98);
 }

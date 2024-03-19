@@ -2,6 +2,7 @@
     // When is favorited, add it to the favorites list; when unfavorited - remove from the fav list
     // Accessing the list through a button/link
 
+
     const FavoritesList = ({ favorites }) => {
         const favsToDisplay = favorites || [];      // checking if favorites is undefined (console Uncaught TypeError error) or null and provide any fallback value to show/use
 

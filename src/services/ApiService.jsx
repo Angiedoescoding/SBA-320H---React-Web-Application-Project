@@ -20,11 +20,13 @@ const ApiService = {
 
         searchArtist: async (artistName) => {
             try {
-                const response = await fetch(`https://api.artic.edu/api/v1/artists/search?q=${encodeURIComponent(artistName)}`);
+                const response = await fetch(`https://api.artic.edu/api/v1/artworks/search?q=${encodeURIComponent(artistName)}`);
                 if (!response.ok) {
                     throw new Error ('Failed to fetch and load an artist.')
                 }
 
+                    console.log(response)
+                    
                 const data = await response.json();
                 return data;
             } catch (error) {

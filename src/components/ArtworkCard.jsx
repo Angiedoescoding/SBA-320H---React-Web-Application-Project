@@ -12,6 +12,7 @@ const ArtworkCard = ({ artwork }) => {
     
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
+        setIsSetArt([artwork.title])
 
         if (isFavorite) {
             console.log(`Removed the "${artwork.title}" from favorites.`);
@@ -27,8 +28,7 @@ const ArtworkCard = ({ artwork }) => {
         <p>Artist: {artwork.artist_title}</p>
             <p>Date: {artwork.date_display}</p>
             <p>Details: {artwork.place_of_origin}</p>
-            <p>{artwork.description}</p>
-
+            <div dangerouslySetInnerHTML={{ __html: artwork.description }} />
         <button onClick={toggleFavorite}>
             <FaHeart color={isFavorite ? 'red' : 'gray'} />
         </button>
@@ -36,4 +36,4 @@ const ArtworkCard = ({ artwork }) => {
     )
 }
 
-export default ArtworkCard
+export default ArtworkCard; 
