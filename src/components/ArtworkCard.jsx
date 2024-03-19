@@ -1,4 +1,4 @@
-// Testing an additional requirement - to allow the user to add the artwork to their favorite to meet the useState requirement (to manage the sate of whether an artwirk is favorited by a user and to keep the choice of fav artworks across sessions and updating the UI to reflect the changes)
+// Testing an additional requirement - to allow the user to add the artwork to their favorite to meet the useState requirement (to manage the sate of whether an artwork is favorited by a user and to keep the choice of fav artworks across sessions and updating the UI to reflect the changes)
 
 // npm i react-icons
 
@@ -12,7 +12,9 @@ const ArtworkCard = ({ artwork }) => {
     
     const toggleFavorite = () => {
         setIsFavorite(!isFavorite);
-        setIsSetArt([artwork.title])
+
+// need to pass the updated list of favorites from this component to its parent component (likely MainPage or App) and update the state there!
+
 
         if (isFavorite) {
             console.log(`Removed the "${artwork.title}" from favorites.`);

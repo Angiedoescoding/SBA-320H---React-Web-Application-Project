@@ -10,14 +10,15 @@ import FavoritesList from "./components/FavoritesList";
 
 
 function App() {
+    // to track the list of favorite items
+  const [favorites, setFavorites] = useState([]);
 
-  
   return (
     <>
-      <Navbar />
+      <Navbar favorites={favorites} />
         <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='/favorites' element={<FavoritesList />} />
+        <Route path='/favorites' element={<FavoritesList favorites={favorites} setFavorites={setFavorites} />} />
         <Route path='*' element={<NotFound />} />
         </Routes>
       <SearchFilter />
