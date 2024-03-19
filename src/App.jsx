@@ -13,13 +13,26 @@ function App() {
     // to track the list of favorite items
   const [favorites, setFavorites] = useState([]);
 
+
+  // Function to update favorites
+  const updateFavorites = (artwork, isFavorite) => {
+    if (isFavorite) {
+        setFavorites([...favorites, artwork]); // Add artwork to favorites
+    } else {
+        const updatedFavorites = favorites.filter(item => item.id !== artwork.id); // Remove artwork from favorites
+        setFavorites(updatedFavorites);
+    }
+};
+
+
   return (
     <>
       <Navbar favorites={favorites} />
         <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/favorites' element={<FavoritesList favorites={favorites} setFavorites={setFavorites} />} />
-        <Route path='*' element={<NotFound />} />
+          <Route path='/favorites' element={<FavoritesList favorites={favorites} />} />
+          {/* <Route path='/favorites' element={<FavoritesList favorites={favorites} updateFavorites={updateFavorites} />} /> */}
+          <Route path='/' element={<MainPage updateFavorites={updateFavorites} />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       <SearchFilter />
       <Toggle />
@@ -27,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

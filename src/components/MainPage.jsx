@@ -9,6 +9,15 @@ const MainPage = () => {
     const [error, setError] = useState(null);
     const [centuryDescriptions, setCenturyDescriptions] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [favorites, setFavorites] = useState([]);
+
+    const updateFavorites = (artwork, isFavorite) => {
+        if (isFavorite) {
+            setFavorites([...favorites, artwork]); // Add artwork to favorites
+        } else {
+            setFavorites(favorites.filter(item => item !== artwork)); // Remove artwork from favorites
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -75,8 +84,9 @@ const MainPage = () => {
 
             <section id="artworks">
                 <div className="artworks-container">
+                    {/* This works in the devtools components state once the button is clicked & the state is changed to true as well */}
                 {artworks.map(artwork => (
-                        <ArtworkCard key={artwork.id} artwork={artwork} />
+                        <ArtworkCard key={artwork.id} artwork={artwork} updateFavorites={updateFavorites} />
                     ))}
                 </div>
             </section>

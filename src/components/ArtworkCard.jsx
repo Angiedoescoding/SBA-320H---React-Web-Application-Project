@@ -5,13 +5,16 @@
 import { useState } from 'react';
 import { FaHeart } from "react-icons/fa";
 
-const ArtworkCard = ({ artwork }) => {
+const ArtworkCard = ({ artwork, updateFavorites }) => {
 
     // State to track whether artwork is favorited
     const [isFavorite, setIsFavorite] = useState(false);
     
     const toggleFavorite = () => {
-        setIsFavorite(!isFavorite);
+        const newFavoriteStatus = !isFavorite;
+        setIsFavorite(newFavoriteStatus);
+    
+        updateFavorites(artwork, newFavoriteStatus);
 
 // need to pass the updated list of favorites from this component to its parent component (likely MainPage or App) and update the state there!
 
