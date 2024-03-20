@@ -20,9 +20,9 @@ const ArtworkCard = ({ artwork, updateFavorites }) => {
 
 
         if (isFavorite) {
-            console.log(`Removed the "${artwork.title}" from favorites.`);
+            // console.log(`Removed the "${artwork.title}" from favorites.`);
         } else {
-            console.log(`Added the "${artwork.title}" to favorites.`)
+            // console.log(`Added the "${artwork.title}" to favorites.`)
         }
     };
 
